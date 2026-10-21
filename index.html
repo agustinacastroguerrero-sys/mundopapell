@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mundo Papel · Librería y papelería</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="contenedor nav">
+    <a href="#inicio" class="marca">
+      <img src="logo.png" alt="Logo de Mundo Papel">
+      <span>Mundo Papel</span>
+    </a>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#como-comprar">Cómo comprar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="btn-carrito" id="abrirCarrito" aria-label="Abrir carrito">
+      <svg class="ico" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h10.2l2-8H6.2"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg> <span class="txt">Carrito</span> <span class="contador" id="contador">0</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="contenedor hero-grid">
+      <div>
+        <span class="etiqueta">Librería &amp; papelería · est. 2026</span>
+        <h1>Todo lo que necesitás para escribir, crear y organizarte.</h1>
+        <p>Biromes, cuadernos, útiles y mucho más. Armá tu pedido en el carrito y finalizá la compra directo por WhatsApp.</p>
+        <div class="botones">
+          <a href="#productos" class="btn btn-principal">Ver productos</a>
+          <a href="#como-comprar" class="btn btn-sec">¿Cómo comprar?</a>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <img src="logo.png" alt="Mundo Papel, librería">
+      </div>
+    </div>
+  </section>
+
+  <div class="beneficios">
+    <div class="contenedor ben-grid">
+      <div class="ben"><span><svg class="ico" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z M14 7l3 3"/></svg></span><div><strong>Gran variedad</strong><small>Cientos de artículos</small></div></div>
+      <div class="ben"><span><svg class="ico" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span><div><strong>Pedido por WhatsApp</strong><small>Rápido y sin vueltas</small></div></div>
+      <div class="ben"><span><svg class="ico" viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v9l-9 5-9-5z M3 8l9 5 9-5 M12 13v9"/></svg></span><div><strong>Stock actualizado</strong><small>Controlamos el inventario</small></div></div>
+      <div class="ben"><span><svg class="ico" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 018-3 4.5 4.5 0 018 3c0 6-8 11-8 11z"/></svg></span><div><strong>Atención cercana</strong><small>Para tu compra de todos los días</small></div></div>
+    </div>
+  </div>
+
+  <section id="productos">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>Nuestros productos</h2>
+        <p>Elegí lo que necesitás y sumalo a tu carrito.</p>
+      </div>
+      <div class="filtros" id="filtros"></div>
+      <div class="grilla" id="grilla"></div>
+    </div>
+  </section>
+
+  <section class="nosotras" id="como-comprar">
+    <div class="contenedor nos-grid">
+      <div>
+        <span class="etiqueta">Sobre Mundo Papel</span>
+        <h2>Una librería pensada para tu día a día</h2>
+        <p>Mundo Papel nace para acercarte la variedad de artículos de librería y papelería que necesitás, cuando los necesitás: desde una birome hasta todo lo de la vuelta a clases.</p>
+        <p>Llevamos un control de inventario para que los productos que ves tengan stock real y puedas comprar con tranquilidad.</p>
+      </div>
+      <div class="pasos">
+        <div class="paso"><div class="num">1</div><div><strong>Elegí tus productos</strong><p>Navegá por categorías y tocá “Agregar”.</p></div></div>
+        <div class="paso"><div class="num">2</div><div><strong>Revisá tu carrito</strong><p>Cambiá cantidades y mirá el total a pagar.</p></div></div>
+        <div class="paso"><div class="num">3</div><div><strong>Finalizá por WhatsApp</strong><p>Se arma el mensaje con tu pedido y nos lo enviás.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="contenedor">
+      <div class="contacto-caja">
+        <div>
+          <h2>¿Tenés dudas o querés algo que no ves?</h2>
+          <p>Escribinos por WhatsApp y te ayudamos con tu pedido.</p>
+          <br>
+          <a class="btn btn-wsp" id="linkWsp" href="#" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg> Escribir por WhatsApp</a>
+        </div>
+        <div class="datos">
+          <div class="dato"><svg class="ico" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg> WhatsApp: <span id="numVisible"></span></div>
+          <div class="dato"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Lunes a viernes · 9 a 18 hs</div>
+          <div class="dato"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg> Efectivo · Mercado Pago · Transferencia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="contenedor">© 2026 Mundo Papel · Librería y papelería · Hecho por Agustina Castro y Sofía Mazgon</div>
+</footer>
+
+<!-- ===== Carrito ===== -->
+<div class="fondo" id="fondo"></div>
+<aside class="panel" id="panel" aria-label="Carrito de compras">
+  <div class="panel-cab">
+    <h2><svg class="ico" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h10.2l2-8H6.2"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg> Tu carrito</h2>
+    <button class="cerrar" id="cerrarCarrito" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="items" id="items"></div>
+  <div class="pie" id="pie">
+    <div class="total"><span>Total</span><span id="total">$0</span></div>
+    <label class="campo" id="campoNombre"><span>Tu nombre *</span><input type="text" id="nombre" placeholder="Ej: María Pérez"></label>
+    <label class="campo"><span>Entrega</span>
+      <select id="entrega">
+        <option>Retiro en el local</option>
+        <option>Envío a domicilio</option>
+      </select>
+    </label>
+    <label class="campo"><span>Forma de pago</span>
+      <select id="pago">
+        <option>Efectivo</option>
+        <option>Mercado Pago / Transferencia</option>
+      </select>
+    </label>
+    <label class="campo"><span>Comentarios (opcional)</span><textarea id="nota" placeholder="Aclaraciones, dirección, colores..."></textarea></label>
+    <button class="finalizar" id="finalizar"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg> Finalizar compra por WhatsApp</button>
+    <button class="vaciar" id="vaciar">Vaciar carrito</button>
+  </div>
+</aside>
+<div class="aviso-toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
